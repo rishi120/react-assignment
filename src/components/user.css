@@ -1,0 +1,99 @@
+.cards {
+    width: 100%;
+    height: 100%;
+    background-color: #2e2e2e;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px #ccc;
+}
+
+.cards h1 {
+    color: #fff;
+}
+
+.cards p {
+    color: #fff;
+}
+
+.userinput {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2e2e2e;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px #ccc;
+}
+
+.userinput input {
+    width: 80%;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    padding: 8px;
+}
+
+.custom-jumbotron {
+    margin: 30px 0;
+}
+
+.custom-jumbotron .display-3 {
+    text-align: left;
+}
+
+.custom-jumbotron .lead {
+    text-align: left;
+    width: 80%;
+}
+
+.space-between {
+    width: 100%;
+    padding: 20px;
+}
+
+.img-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px !important;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px !important;
+    transition: 0.3s ease;
+    z-index: 10;
+}
+
+.img-wrapper:hover {
+    transform: scale(1.03);
+}
+
+.img-wrapper .overlay-text {
+    /* position: absolute;
+    bottom: 0; */
+    /* background-color: #000;
+    opacity: 0.8; */
+    padding: 10px 0;
+    width: 100%;
+}
+
+.img-wrapper .overlay-text h1 {
+    font-size: 20px;
+    color: #111111;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.img-wrapper .overlay-text p {
+    font-size: 15px;
+    color: #111111;
+    margin-bottom: 0;
+    text-align: left;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+.wrap-around {
+    width: 100%;
+    padding: 10px;
+}
