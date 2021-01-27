@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/rishi120/react-assignment/static/css/main.42f57aef.chunk.css",
+    "main.js": "/rishi120/react-assignment/static/js/main.624beacf.chunk.js",
+    "main.js.map": "/rishi120/react-assignment/static/js/main.624beacf.chunk.js.map",
+    "runtime-main.js": "/rishi120/react-assignment/static/js/runtime-main.0afc22c5.js",
+    "runtime-main.js.map": "/rishi120/react-assignment/static/js/runtime-main.0afc22c5.js.map",
+    "static/css/2.d9ad5f5c.chunk.css": "/rishi120/react-assignment/static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.7351bca4.chunk.js": "/rishi120/react-assignment/static/js/2.7351bca4.chunk.js",
+    "static/js/2.7351bca4.chunk.js.map": "/rishi120/react-assignment/static/js/2.7351bca4.chunk.js.map",
+    "index.html": "/rishi120/react-assignment/index.html",
+    "precache-manifest.b4ac72f6b7935e4f22d22fd090a8c01b.js": "/rishi120/react-assignment/precache-manifest.b4ac72f6b7935e4f22d22fd090a8c01b.js",
+    "service-worker.js": "/rishi120/react-assignment/service-worker.js",
+    "static/css/2.d9ad5f5c.chunk.css.map": "/rishi120/react-assignment/static/css/2.d9ad5f5c.chunk.css.map",
+    "static/css/main.42f57aef.chunk.css.map": "/rishi120/react-assignment/static/css/main.42f57aef.chunk.css.map",
+    "static/js/2.7351bca4.chunk.js.LICENSE.txt": "/rishi120/react-assignment/static/js/2.7351bca4.chunk.js.LICENSE.txt",
+    "static/media/client.jpeg": "/rishi120/react-assignment/static/media/client.bed06bbc.jpeg",
+    "static/media/client2.jpeg": "/rishi120/react-assignment/static/media/client2.cfee94e4.jpeg",
+    "static/media/life1.png": "/rishi120/react-assignment/static/media/life1.cc4c5db6.png",
+    "static/media/life2.png": "/rishi120/react-assignment/static/media/life2.24e108e6.png",
+    "static/media/life3.png": "/rishi120/react-assignment/static/media/life3.39157b84.png",
+    "static/media/life4.png": "/rishi120/react-assignment/static/media/life4.42d54534.png",
+    "static/media/story.jpg": "/rishi120/react-assignment/static/media/story.638814e0.jpg",
+    "static/media/usa.jpg": "/rishi120/react-assignment/static/media/usa.7056db20.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0afc22c5.js",
+    "static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.7351bca4.chunk.js",
+    "static/css/main.42f57aef.chunk.css",
+    "static/js/main.624beacf.chunk.js"
+  ]
+}
