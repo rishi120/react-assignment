@@ -16,6 +16,7 @@ import imgPath3 from "./images/life2.png";
 import imgPath4 from "./images/life3.png";
 import imgPath5 from "./images/life4.png";
 import Story from "./components/story";
+import Mycorner from "./components/my-corner";
 
 class App extends Component {
   state = {
@@ -65,7 +66,7 @@ class App extends Component {
     return (
       <div className="App">
         <Container>
-          <Maincontent></Maincontent>
+          <Maincontent> </Maincontent>{" "}
           <div style={wrapper}>
             <Row>
               <Useroutput
@@ -77,17 +78,16 @@ class App extends Component {
                   type="button"
                   onClick={this.updateuserName.bind(this, "Rishi")}
                 >
-                  Update Username
-                </button>
-              </Useroutput>
+                  Update Username{" "}
+                </button>{" "}
+              </Useroutput>{" "}
               <Useroutput
                 username={this.state.output[1].name}
                 paragraph="Hey There! Wassup"
               />
-              <Userinput changed={this.namechangedHandler} />
-            </Row>
+              <Userinput changed={this.namechangedHandler} />{" "}
+            </Row>{" "}
           </div>
-
           <div>
             <section className="cards-section">
               <Row>
@@ -95,43 +95,43 @@ class App extends Component {
                   imgPath={imgPath}
                   heading={this.state.updateDetails[0].cardHeading}
                   paragraph={this.state.updateDetails[1].cardParagraph}
-                ></Capabilities>
+                ></Capabilities>{" "}
                 <Capabilities
                   imgPath={imgPath1}
                   heading={this.state.updateDetails[0].cardHeading}
                   paragraph={this.state.updateDetails[1].cardParagraph}
-                ></Capabilities>
+                ></Capabilities>{" "}
                 <Capabilities
                   imgPath={imgPath2}
                   heading={this.state.updateDetails[0].cardHeading}
                   paragraph={this.state.updateDetails[1].cardParagraph}
-                ></Capabilities>
-                <div className="space-between"></div>
+                ></Capabilities>{" "}
+                <div className="space-between"> </div>{" "}
                 <Capabilities
                   imgPath={imgPath3}
                   heading={this.state.updateDetails[0].cardHeading}
                   paragraph={this.state.updateDetails[1].cardParagraph}
-                ></Capabilities>
+                ></Capabilities>{" "}
                 <Capabilities
                   imgPath={imgPath4}
                   heading={this.state.updateDetails[0].cardHeading}
                   paragraph={this.state.updateDetails[1].cardParagraph}
-                ></Capabilities>
+                ></Capabilities>{" "}
                 <Capabilities
                   imgPath={imgPath5}
                   heading={this.state.updateDetails[0].cardHeading}
                   paragraph={this.state.updateDetails[1].cardParagraph}
-                ></Capabilities>
-              </Row>
+                ></Capabilities>{" "}
+              </Row>{" "}
             </section>
-
             <Row>
-              <div className="space-between"></div>
+              <div className="space-between"> </div>{" "}
               <Cards storyHeading="Our Story" />
-            </Row>
+            </Row>{" "}
             <Story />
-          </div>
-        </Container>
+            <Mycorner />
+          </div>{" "}
+        </Container>{" "}
       </div>
     );
   }

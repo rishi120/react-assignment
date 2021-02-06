@@ -29,7 +29,7 @@ const Capabilities = (props) => {
             // end: "+=100",
             scrub: 1,
             stagger: 0.5,
-            markers: true,
+            // markers: true,
           },
         });
         animateHeading.from(selectcardHeading, {
@@ -43,7 +43,7 @@ const Capabilities = (props) => {
             start: "top 80%",
             // end: "+=100",
             scrub: 1,
-            markers: true,
+            // markers: true,
           },
         });
         animateParagraph.from(selectcardPara, {
@@ -57,7 +57,7 @@ const Capabilities = (props) => {
             start: "top 80%",
             // end: "+=100",
             scrub: 1,
-            markers: true,
+            // markers: true,
           },
         });
       },
@@ -115,10 +115,10 @@ const Capabilities = (props) => {
       <div className="img-wrapper" ref={(e) => (selectCards = e)}>
         <img src={props.imgPath} alt="client" className="img-fluid" />
         <div className="overlay-text">
-          <h1 ref={(e) => (selectcardHeading = e)}>{props.heading}</h1>
-          <p ref={(e) => (selectcardPara = e)}>{props.paragraph}</p>
-        </div>
-      </div>
+          <h1 ref={(e) => (selectcardHeading = e)}> {props.heading} </h1>{" "}
+          <p ref={(e) => (selectcardPara = e)}> {props.paragraph} </p>{" "}
+        </div>{" "}
+      </div>{" "}
     </Col>
   );
 };

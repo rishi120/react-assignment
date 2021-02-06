@@ -3,6 +3,7 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
 import storyImg from "../images/story.jpg";
+import UiTabs from "./materialui-tabs";
 
 const Story = () => {
   const [definePara, setpara] = useState({
@@ -13,6 +14,8 @@ const Story = () => {
       },
     ],
   });
+  const [key, setKey] = useState("home");
+
   const storySection = {
     padding: "50px 0 50px 0",
   };
@@ -32,8 +35,9 @@ const Story = () => {
   const alignCenter = {
     display: "flex",
     alignItems: "center",
-    height: "100%",
+    // height: "100%",
     fontStyle: "italic",
+    paddingTop: "30px",
   };
   return (
     <section style={storySection}>
@@ -44,7 +48,17 @@ const Story = () => {
           </div>
         </Col>
         <Col md={8}>
+          <h1
+            style={{
+              textAlign: "left",
+              borderBottom: "1px solid #dedede",
+              paddingBottom: "10px",
+            }}
+          >
+            About
+          </h1>
           <p style={alignCenter}>{definePara.para[0].content}</p>
+          <UiTabs />
         </Col>
       </Row>
     </section>

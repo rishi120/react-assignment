@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 
@@ -68,4 +67,32 @@ body {
     to {
         transform: rotate(360deg);
     }
+}
+
+.custom-tabs {}
+
+.custom-tabs .tabs {
+    padding: 10px 20px 10px 20px;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.custom-tabs .tabs h1 {
+    font-size: 30px;
+    margin-bottom: 0;
+    background-color: #121211;
+    padding: 15px;
+    width: 25%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.MuiTypography-body1 {
+    text-align: left;
+}
+
+.MuiTab-textColorInherit {
+    outline: 0 !important;
 }

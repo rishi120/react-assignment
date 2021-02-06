@@ -11,8 +11,8 @@ const Userinput = (props) => {
           placeholder="Update Username"
           onChange={props.changed}
           //   value={props.username}
-        />
-      </div>
+        />{" "}
+      </div>{" "}
     </Col>
   );
 };
