@@ -3,6 +3,10 @@ import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import React, { Component } from "react";
 import Changeheading from "./changetext";
+/* gsap imports */
+import gsap, { Power2 } from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 class Maincontent extends Component {
   state = {

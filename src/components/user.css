@@ -38,7 +38,7 @@
 }
 
 .custom-jumbotron {
-    margin: 30px 0;
+    margin: 50px 0 0 0;
 }
 
 .custom-jumbotron .display-3 {
@@ -96,4 +96,8 @@
 .wrap-around {
     width: 100%;
     padding: 10px;
+}
+
+.more-content {
+    padding-top: 50px;
 }

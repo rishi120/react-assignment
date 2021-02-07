@@ -17,6 +17,7 @@ import imgPath4 from "./images/life3.png";
 import imgPath5 from "./images/life4.png";
 import Story from "./components/story";
 import Mycorner from "./components/my-corner";
+import HideAppBar from "./components/menus";
 
 class App extends Component {
   state = {
@@ -66,7 +67,8 @@ class App extends Component {
     return (
       <div className="App">
         <Container>
-          <Maincontent> </Maincontent>{" "}
+          <HideAppBar />
+          <Maincontent> </Maincontent>
           <div style={wrapper}>
             <Row>
               <Useroutput

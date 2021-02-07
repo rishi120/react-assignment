@@ -18,44 +18,44 @@ const Capabilities = (props) => {
     ScrollTrigger.matchMedia({
       "(min-width: 1200px)": function () {
         animateCard.from(selectCards, {
-          y: -50,
+          y: -100,
           opacity: 0,
           // ease: Power2.easeInOut,
-          duration: 0.3,
+          duration: 0.1,
           delay: 0.2,
           scrollTrigger: {
             trigger: "selectCards",
-            start: "top 80%",
-            // end: "+=100",
+            start: "top 50%",
+            end: "+=1000",
             scrub: 1,
             stagger: 0.5,
             // markers: true,
           },
         });
         animateHeading.from(selectcardHeading, {
-          y: 50,
+          y: 100,
           opacity: 0,
-          duration: 0.3,
+          duration: 0.2,
           delay: 0.4,
           // ease: Power2.easeInOut,
           scrollTrigger: {
             trigger: "selectcardHeading",
-            start: "top 80%",
-            // end: "+=100",
+            start: "top 50%",
+            end: "+=1000",
             scrub: 1,
             // markers: true,
           },
         });
         animateParagraph.from(selectcardPara, {
-          y: 50,
+          y: 100,
           opacity: 0,
           duration: 0.3,
           delay: 0.6,
           // ease: Power2.easeInOut,
           scrollTrigger: {
             trigger: "selectcardPara",
-            start: "top 80%",
-            // end: "+=100",
+            start: "top 50%",
+            end: "+=1000",
             scrub: 1,
             // markers: true,
           },
@@ -72,7 +72,7 @@ const Capabilities = (props) => {
           delay: 0.2,
           scrollTrigger: {
             trigger: "selectCards",
-            start: "top 80%",
+            start: "top 20%",
             // end: "+=100",
             scrub: 1,
             stagger: 0.5,
@@ -87,7 +87,7 @@ const Capabilities = (props) => {
           ease: Power2.easeInOut,
           scrollTrigger: {
             trigger: "selectcardHeading",
-            start: "top 80%",
+            start: "top 20%",
             // end: "+=100",
             scrub: 1,
             markers: true,
@@ -101,7 +101,7 @@ const Capabilities = (props) => {
           ease: Power2.easeInOut,
           scrollTrigger: {
             trigger: "selectcardPara",
-            start: "top 80%",
+            start: "top 20%",
             // end: "+=100",
             scrub: 1,
             markers: true,
