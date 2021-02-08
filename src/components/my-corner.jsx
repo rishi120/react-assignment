@@ -9,6 +9,11 @@ import project4 from "../images/projects/blackswan.png";
 import newImage from "../images/t4g.png";
 import aboutImg from "../images/about-pic-2.png";
 import Button from "react-bootstrap/Button";
+import Menu from "../images/square.png";
+import gallery from "../images/logos/gallery.png";
+import camera from "../images/logos/photo.png";
+import document from "../images/logos/documents.png";
+import contact from "../images/logos/phone.png";
 
 class Mycorner extends Component {
   state = {
@@ -20,15 +25,36 @@ class Mycorner extends Component {
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     showHeading: true,
     renderImage: true,
-    renderHeading: "About Us",
-    renderParagraph:
-      " Lorem ipsum dolor, sit amet consectetur adipisicing elit.empore sequi, necessitatibus culpa in animi harum, veniam odit a quod eveniet nulla temporibus dolorem ad dolores similique? Aspernatur, fugit voluptatem.",
+    renderContent: [
+      {
+        renderHeading: "About Us",
+      },
+      {
+        renderParagraph:
+          "Lorem ipsum dolor, sit amet consectetur adipisicing elit.empore sequi, necessitatibus culpa in animi harum, veniam odit a quod eveniet nulla temporibus dolorem ad dolores similique? Aspernatur, fugit voluptatem.",
+      },
+    ],
+    renderList: false,
   };
 
   paraChange = () => {
     this.setState({
-      renderParagraph:
-        "A paragraph is a group of words put together to form a group that is usually longer than a sentence. Paragraphs are often made up of several sentences. There are usually between three and eight sentences. Paragraphs can begin with an indentation (about five spaces), or by missing a line out, and then starting again. This makes it easier to see when one paragraph ends and another begins.",
+      renderContent: [
+        {
+          renderHeading: "About Us",
+        },
+        {
+          renderParagraph:
+            "A paragraph is a group of words put together to form a group that is usually longer than a sentence. Paragraphs are often made up of several sentences. There are usually between three and eight sentences. Paragraphs can begin with an indentation (about five spaces), or by missing a line out, and then starting again. This makes it easier to see when one paragraph ends and another begins.",
+        },
+      ],
+    });
+  };
+
+  toggle = () => {
+    const showList = this.state.renderList;
+    this.setState({
+      renderList: !showList,
     });
   };
 
@@ -46,10 +72,80 @@ class Mycorner extends Component {
         </h1>
       );
     }
-    let image1 = null;
-    let image2 = null;
-    let image3 = null;
-    let image4 = null;
+    let lists = null;
+    if (this.state.renderList) {
+      lists = (
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "flex-end",
+            paddingTop: "10px",
+          }}
+        >
+          <ul
+            style={{
+              listStyleType: "none",
+              paddingLeft: "0",
+              width: "40%",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "flex-end",
+              transition: "0.3s ease",
+            }}
+          >
+            <li style={{ paddingBottom: "15px", paddingTop: "15px" }}>
+              <img
+                src={gallery}
+                style={{
+                  width: "50px",
+                }}
+                alt="gallery"
+              />
+            </li>
+            <li style={{ paddingBottom: "15px" }}>
+              <img
+                src={document}
+                style={{
+                  width: "50px",
+                }}
+                alt="document"
+              />
+            </li>
+            <li style={{ paddingBottom: "15px" }}>
+              <img
+                src={camera}
+                style={{
+                  width: "50px",
+                }}
+                alt="camera"
+              />
+            </li>
+            <li style={{ paddingBottom: "15px" }}>
+              <img
+                src={contact}
+                style={{
+                  width: "50px",
+                }}
+                alt="contact"
+              />
+            </li>
+          </ul>
+        </div>
+      );
+    }
+    // let imageList = ["image1", "image2", "image3", "image4"];
+    // for (var i = 0; i <= imageList.length; i++) {
+    //   var result = imageList[i];
+    //   console.log(result);
+    // }
+    // let groupImages = imageList.map(function (item, index, array) {
+    //   return item;
+    // });
+    // console.log(groupImages);
+    let image1,
+      image2,
+      image3,
+      image4 = null;
     if (this.state.renderImage) {
       image1 = <img src={project1} className="img-fluid trans-effect" />;
       image2 = <img src={project2} className="img-fluid trans-effect" />;
@@ -137,14 +233,28 @@ class Mycorner extends Component {
                       color: "#932a33",
                     }}
                   >
-                    {this.state.renderHeading}
+                    {this.state.renderContent[0].renderHeading}
                   </h1>
                   <p style={{ textAlign: "right" }}>
-                    {this.state.renderParagraph}
+                    {this.state.renderContent[1].renderParagraph}
                   </p>
-                  <Button style={{ float: "right" }} onClick={this.paraChange}>
-                    Update Paragraph
-                  </Button>
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "flex-end",
+                      paddingBottom: "10px",
+                    }}
+                  >
+                    <Button onClick={this.paraChange}>Update Paragraph</Button>
+                  </div>
+                  <div style={{ display: "flex", justifyContent: "flex-end" }}>
+                    <img
+                      src={Menu}
+                      onClick={this.toggle}
+                      style={{ width: "40px", cursor: "pointer" }}
+                    />
+                  </div>
+                  {lists}
                 </div>
               </Col>
             </Row>

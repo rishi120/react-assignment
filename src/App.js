@@ -46,9 +46,9 @@ class App extends Component {
       ],
     });
   };
-  updateButton = () => {
-    console.log("Hi");
-  };
+  // updateButton = () => {
+  //   console.log("Hi");
+  // };
   render() {
     const wrapper = {
       margin: "50px 0",
