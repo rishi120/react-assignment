@@ -9,7 +9,7 @@ import project4 from "../images/projects/blackswan.png";
 import newImage from "../images/t4g.png";
 import aboutImg from "../images/about-pic-2.png";
 import Button from "react-bootstrap/Button";
-import Menu from "../images/square.png";
+import Menu from "../images/more.png";
 import gallery from "../images/logos/gallery.png";
 import camera from "../images/logos/photo.png";
 import document from "../images/logos/documents.png";
@@ -251,7 +251,7 @@ class Mycorner extends Component {
                     <img
                       src={Menu}
                       onClick={this.toggle}
-                      style={{ width: "40px", cursor: "pointer" }}
+                      style={{ width: "25px", cursor: "pointer" }}
                     />
                   </div>
                   {lists}

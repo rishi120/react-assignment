@@ -18,6 +18,7 @@ import imgPath5 from "./images/life4.png";
 import Story from "./components/story";
 import Mycorner from "./components/my-corner";
 import HideAppBar from "./components/menus";
+import Sidemenu from "./components/sidenav";
 
 class App extends Component {
   state = {
@@ -67,6 +68,7 @@ class App extends Component {
     return (
       <div className="App">
         <Container>
+          <Sidemenu />
           <HideAppBar />
           <Maincontent> </Maincontent>
           <div style={wrapper}>
